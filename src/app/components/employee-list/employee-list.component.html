@@ -1,3 +1,19 @@
-<p *ngFor="let employee of employees">
-    {{employee.firstName}} {{employee.lastName}}
-</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.role}}</td>
+        </tr>
+    </tbody>
+</table>
